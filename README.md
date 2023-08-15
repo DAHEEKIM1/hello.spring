@@ -22,7 +22,20 @@ MVC: Model, View, Controller
 ```
 
 
+
 ## API
+@ResponseBody를 사용하여 http의 body에 내용을 직접 넣어준다
+- 단순 문자의 경우 StringConverter가 호출되고, 메서드의 경우 객체 JsonConverter{name:spring}과 같은 형태가 호출된다
+
+  
+![image](https://github.com/DAHEEKIM1/hello.spring/assets/66730012/b3a8ac86-f282-4918-a04b-c2d5df265a51)
+
+
+- @ResponseBody를 사용하면
+- HTTP의 Body에 문자 내용을 직접 반환
+- ViewResolver 대신에 HttpMessageConverter가 동작
+- 기본 문자처리: StringHttpMessageConverter
+- 기본 객체처리: MappingJackson2HttpConverter
 ```
 
 ```
