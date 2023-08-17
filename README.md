@@ -73,3 +73,9 @@ MVC: Model, View, Controller
 # [섹션5] 회원 관리 예제 - 웹 MVC 개발
 
 회원 등록 및 전체 회원 조회 - 코드 
+
+
+# [섹션6] 스프링 DB 접근 기술
+1. H2 데이터베이스
+   - H2 데이터베이스 설치 후 Member table 생성하기
+
