@@ -78,4 +78,7 @@ MVC: Model, View, Controller
 # [섹션6] 스프링 DB 접근 기술
 1. H2 데이터베이스
    - H2 데이터베이스 설치 후 Member table 생성하기
-
+2. JDBC connection(JdbcMemberRepository)
+3. 스프링 통합 테스트- 컨테이너와 DB를 통합해서 테스트 하는것
+   - @SpringBootTest: 스프링 컨테이너와 테스트 함께 실행
+   - @Transactional: 테스트시작전 트랜잭션을 시작하고, 완료 후 롤백한다. -> DB에 데이터가 남지않아 다음 테스트에 영향을 주지 않음. 
