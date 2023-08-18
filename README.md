@@ -81,4 +81,18 @@ MVC: Model, View, Controller
 2. JDBC connection(JdbcMemberRepository)
 3. 스프링 통합 테스트- 컨테이너와 DB를 통합해서 테스트 하는것
    - @SpringBootTest: 스프링 컨테이너와 테스트 함께 실행
-   - @Transactional: 테스트시작전 트랜잭션을 시작하고, 완료 후 롤백한다. -> DB에 데이터가 남지않아 다음 테스트에 영향을 주지 않음. 
+   - @Transactional: 테스트시작전 트랜잭션을 시작하고, 완료 후 롤백한다. -> DB에 데이터가 남지않아 다음 테스트에 영향을 주지 않음.
+
+4. JdbcTemplate
+   - MyBatis와 비슷함. sql문은 직접 작성해야한다.
+   - SimpleJdbcInsert를 사용하면 tablename과 key만 있으면 만들어진다.
+   - jdbcTemplate으로 query날리고 memberRowMapper로 매핑
+  
+5. JPA
+   - SQL은 직접 개발자가 작성해야하는 번거로움을 처리해준다.
+   - SQL과 데이터 중심 설계에서 객체지향 설계로 전환이 가능하다.
+   - build.gradle에 spring-boot-starter-data-jpa를 추가하면된다.
+
+6. 스프링 데이터 JPA
+   - 개발에서 반복이 줄어들고 생산성이 증가한다.
+   - 리포지토리에 구현 클래스 없이 인터페이스 만으로 개발이 가능하며 CRUD 기능도 제공한다. 
