@@ -125,7 +125,7 @@ MVC: Model, View, Controller
 
   AOP의 동작 원리
 - 스프링 빈들 앞에 proxy를 만들어주고, 스프링 컨테이너는 의존성 주입때 proxy빈을 넣어준다.
-- 실제 빈을 실행할때 proxy빈이 수행되고 joinpoing가 각각의 메서드들이 실행될 때 개입해 시간을 체크해주는 방식으로 작동한다.
+- 실제 빈을 실행할때 proxy빈이 수행되고 joinpoint가 각각의 메서드들이 실행될 때 개입해 시간을 체크해주는 방식으로 작동한다.
 - ![image](https://github.com/DAHEEKIM1/hello.spring/assets/66730012/842d69f9-e650-44b4-8ef4-8dc6fcc71f9d)
 
 ### @Around
@@ -134,3 +134,4 @@ MVC: Model, View, Controller
 ### @Aespect
 - 메서드가 AOP 기능을 할 수 있게한다. 
 
+![image](https://github.com/DAHEEKIM1/hello.spring/assets/66730012/1c04644c-df92-40f5-867a-0d160a7bf637)
